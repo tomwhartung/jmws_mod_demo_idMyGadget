@@ -8,7 +8,7 @@
 	<authorEmail>admin@joomla.org</authorEmail>
 	<authorUrl>www.joomla.org</authorUrl>
 	<version>3.0.0</version>
-	<description>MOD_CUSTOM_XML_DESCRIPTION</description>
+	<description>MOD_DEMO_IDMYGADGET_XML_DESCRIPTION</description>
 
 	<customContent />
 
@@ -25,18 +25,6 @@
 	<config>
 		<fields name="params">
 			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
-				<field
-					name="prepare_content"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					label="MOD_CUSTOM_FIELD_PREPARE_CONTENT_LABEL"
-					description="MOD_CUSTOM_FIELD_PREPARE_CONTENT_DESC"
-					default="0">
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
-				</field>
-				<field name="backgroundimage" type="media"
-					label="MOD_CUSTOM_FIELD_BACKGROUNDIMAGE_LABEL" description="MOD_BACKGROUNDIMAGE_FIELD_LOGO_DESC" />
 			</fieldset>
 			<fieldset
 				name="advanced">
