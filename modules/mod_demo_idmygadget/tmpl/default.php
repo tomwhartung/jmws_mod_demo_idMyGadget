@@ -25,5 +25,7 @@ defined('_JEXEC') or die;
 			Emulate Tablet</a></li>
 		<li><a href="<?php print $uriClean . '?gadgetType=desktop'; ?>" title="Emulate Desktop">
 			Emulate Desktop</a></li>
+		<li><a href="<?php print $uriClean; ?>" title="Detect Device">
+			Detect Device</a></li>
 	</ul>
 </div>
