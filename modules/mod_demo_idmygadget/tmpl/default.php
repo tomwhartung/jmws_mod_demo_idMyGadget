@@ -15,9 +15,21 @@ defined('_JEXEC') or die;
 	<?php echo $module->content;?>
 	<?php
 		$uriRaw = & JFactory::getURI();
-		$strposQuestionMark = strpos( $uri, '?' );
-		$uriClean = substr( $uriRaw, 0, $strposQuestionMark );
+		$strposQuestionMark = strpos( $uriRaw, '?' );
+		if ( $strposQuestionMark > 0 )
+		{
+			$uriClean = substr( $uriRaw, 0, $strposQuestionMark );
+		}
+		else
+		{
+			$uriClean = $uriRaw;
+		}
+		$uriTest = JURI::current();
 	?>
+	<p>$uriRaw: <?php echo $uriRaw; ?></p>
+	<p>$strposQuestionMark: <?php echo $strposQuestionMark; ?></p>
+	<p>$uriClean: <?php echo $uriClean; ?></p>
+	<p>$uriTest: <?php echo $uriTest; ?></p>
 	<ul>
 		<li><a href="<?php print $uriClean . '?gadgetType=phone'; ?>" title="Emulate Phone">
 			Emulate Phone</a></li>
