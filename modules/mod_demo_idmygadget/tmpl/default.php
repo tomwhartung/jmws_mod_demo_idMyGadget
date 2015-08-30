@@ -24,12 +24,12 @@ defined('_JEXEC') or die;
 		{
 			$uriClean = $uriRaw;
 		}
-		$uriTest = JURI::current();
+		//
+		// Debug code:
+		// print '<p>$uriRaw: ' . $uriRaw . '</p>';
+		// print '<p>$strposQuestionMark: ' . $strposQuestionMark . '</p>';
+		// print '<p>$uriClean: ' . $uriClean . '</p>';
 	?>
-	<p>$uriRaw: <?php echo $uriRaw; ?></p>
-	<p>$strposQuestionMark: <?php echo $strposQuestionMark; ?></p>
-	<p>$uriClean: <?php echo $uriClean; ?></p>
-	<p>$uriTest: <?php echo $uriTest; ?></p>
 	<ul>
 		<li><a href="<?php print $uriClean . '?gadgetType=phone'; ?>" title="Emulate Phone">
 			Emulate Phone</a></li>
@@ -37,7 +37,7 @@ defined('_JEXEC') or die;
 			Emulate Tablet</a></li>
 		<li><a href="<?php print $uriClean . '?gadgetType=desktop'; ?>" title="Emulate Desktop">
 			Emulate Desktop</a></li>
-		<li><a href="<?php print $uriClean; ?>" title="Detect Device">
+		<li><a href="<?php print $uriClean . '?gadgetType=unknown'; ?>" title="Detect Device">
 			Detect Device</a></li>
 	</ul>
 </div>
