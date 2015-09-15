@@ -34,15 +34,17 @@ This module works only when used with one of the templates it was written for:
 * [jmws_protostar_idMyGadget](https://github.com/tomwhartung/jmws_protostar_idMyGadget)
 * [jmws_protostar_tomh_idMyGadget](https://github.com/tomwhartung/jmws_protostar_tomh_idMyGadget)
 
-
 ## Installation:
 
+Installation of all jmws_* joomla extensions is the same.
+For details, see the following documents in the [Jmws Accoutrements Repo on github](https://github.com/tomwhartung/jmws_accoutrements/):
 
+* [Installing Jmws Joomla Extensions document](https://github.com/tomwhartung/jmws_accoutrements/blob/master/doc/joomla/install.md)
+* [Jmws Github Strategy document](https://github.com/tomwhartung/jmws_accoutrements/blob/master/doc/devops/cms_github_strategy.md)
 
 ## Parameters:
 
-(It would be nice to have the site set up with demos and screen shots, so we can refer to all that.)
-
+This module has no additional parameters, only the ones that Joomla! adds by default to all modules.
 
 ## About IdMyGadget:
 
